@@ -1,0 +1,363 @@
+:root {
+  /* Primary */
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+
+  /* Neutral */
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: var(--very-dark-cyan);
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.header__logo {
+  width: 125px;
+}
+
+.header__button {
+  padding: 2px 18px;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  border-radius: 25px;
+}
+
+.header__button:hover {
+  color: var(--light-pink);
+  border-color: var(--light-pink);
+}
+
+/* MAIN */
+
+.hero__body {
+  text-align: center;
+}
+
+.hero__title {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 5.5vw, 3.2rem);
+}
+
+.hero__paragraph {
+  max-width: 450px;
+  margin: 2.5rem auto;
+  font-size: clamp(1.5rem, 2.5vw, 1.6rem);
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 28px;
+  font-weight: 600;
+  color: var(--very-pale-blue);
+  background-color: var(--pink);
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: var(--light-pink);
+}
+
+.hero__figure {
+  max-width: 875px;
+  margin: 8rem auto;
+}
+
+.hero__list {
+  max-width: 550px;
+  margin: 0 auto 4rem;
+  display: grid;
+  justify-content: center;
+  gap: 7rem;
+  text-align: center;
+}
+
+.hero__icon {
+  width: 35px;
+}
+
+.hero__number {
+  font-weight: 700;
+  font-size: 5.4rem;
+  text-align: left;
+}
+
+.hero__list-text {
+  color: #a0a3a8;
+}
+
+/* CARDS */
+
+.cards-section {
+  padding: 7rem 0 15rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+}
+
+.card__no-reverse {
+  margin: 18rem 0;
+}
+
+.card__body {
+  text-align: center;
+}
+
+.card__title {
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.card__copy {
+  font-size: clamp(1.5rem, 2.5vw, 1.6rem);
+}
+
+.floating {
+  text-align: center;
+  margin-bottom: 17rem;
+}
+
+.floating__title {
+  margin-bottom: 2.5rem;
+  font-size: clamp(2.5rem, 5.5vw, 3.2rem);
+}
+
+/* FOOTER */
+
+.footer__bg-curve {
+  background-image: url("../images/bg-footer-top-mobile.svg");
+  height: 77px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  padding: 5rem 0;
+  background-color: var(--very-dark-cyan);
+}
+
+.newsletter {
+  padding: 7rem 0 9rem;
+  color: var(--very-pale-blue);
+}
+
+.newsletter__title {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(1.8rem, 5.5vw, 2.4rem);
+}
+
+.newsletter__copy {
+  margin: 1.5rem 0 3rem;
+  font-size: 1.4rem;
+}
+
+.newsletter__form {
+  display: grid;
+  gap: 2rem;
+}
+
+.newsletter__input {
+  padding: 8px 14px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.newsletter__input:hover,
+.newsletter__input:focus {
+  border-color: #04c6f1;
+}
+
+.newsletter__button {
+  justify-self: end;
+  padding: 8px 32px;
+  color: var(--very-pale-blue);
+  background-color: var(--pink);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter__button:hover {
+  background-color: var(--light-pink);
+}
+
+.footer-info__logo {
+  width: 170px;
+}
+
+.footer-info__paragraph {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: var(--very-pale-blue);
+}
+
+.address {
+  margin: 5rem 0;
+}
+
+.address__list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.address__item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.address__link {
+  font-style: normal;
+  font-size: 1.4rem;
+  color: var(--very-pale-blue);
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.fa-brands {
+  color: var(--very-pale-blue);
+  font-size: 2.5rem;
+}
+
+.fa-brands:hover {
+  color: #04c6f1;
+}
+
+.fa-facebook-f {
+  font-size: 1.8rem;
+  padding: 2px 3px 2px 7px;
+  color: var(--very-dark-cyan);
+  background-color: var(--very-pale-blue);
+  border-radius: 3px;
+}
+
+.fa-facebook-f:hover {
+  background-color: #04c6f1;
+  color: var(--very-dark-cyan);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  /* HEADER */
+
+  .header__logo {
+    width: 170px;
+  }
+
+  .header__button {
+    padding: 4px 32px;
+  }
+  /* MAIN */
+  .hero__list {
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5.5rem;
+  }
+
+  .card__no-reverse {
+    flex-direction: row;
+  }
+
+  .card__img {
+    max-width: 450px;
+  }
+  
+  .card__body {
+    max-width: 450px;
+    text-align: left;
+  }
+
+  .btn {
+    padding: 1.8rem 7.2rem;
+  }
+
+  /* FOOTER */
+
+  .footer__bg-curve {
+    background-image: url("../images/bg-footer-top-mobile.svg");
+    height: 170px;
+  }
+
+  .footer__flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .newsletter {
+    max-width: 400px;
+    padding: 0;
+  }
+
+  .newsletter__copy {
+    padding-right: 8rem;
+  }
+
+  .newsletter__form {
+    grid-auto-flow: column;
+  }
+
+  .footer-info {
+    max-width: 320px;
+  }
+
+  .address {
+    margin: 1.5rem 0;
+  }
+
+  .footer-social {
+    margin-top: 2.5rem;
+  }
+
+  .fa-brands {
+    font-size: 3.5rem;
+  }
+
+  .fa-facebook-f {
+    font-size: 2.7rem;
+    padding: 2px 4px 2px 8px;
+  }
+}
