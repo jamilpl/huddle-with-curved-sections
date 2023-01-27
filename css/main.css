@@ -53,6 +53,14 @@ body {
 
 /* MAIN */
 
+.hero {
+  padding-bottom: 7rem;
+  background-image: url("../images/bg-section-top-mobile-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -1rem right 0;
+}
+
 .hero__body {
   text-align: center;
 }
@@ -111,8 +119,12 @@ body {
 
 /* CARDS */
 
-.cards-section {
-  padding: 7rem 0 15rem;
+.card__img--top {
+  margin-top: 8rem;
+}
+
+.card-curves {
+  background-color: var(--very-pale-blue);
 }
 
 .card {
@@ -121,8 +133,13 @@ body {
   gap: 5.5rem;
 }
 
-.card__no-reverse {
-  margin: 18rem 0;
+.card-no-reverse-curve {
+  padding: 30rem 0;
+  background-image: url("../images/bg-section-bottom-mobile-1.svg"),
+    url("../images/bg-section-top-mobile-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -0.5rem right 0, bottom -0.5rem right 0;
 }
 
 .card__body {
@@ -131,7 +148,7 @@ body {
 
 .card__title {
   font-size: clamp(1.8rem, 3.2vw, 3rem);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 1.5rem;
 }
 
@@ -140,8 +157,13 @@ body {
 }
 
 .floating {
+  padding: 25rem 0;
   text-align: center;
-  margin-bottom: 17rem;
+  background-image: url("../images/bg-footer-top-mobile.svg"),
+    url("../images/bg-section-bottom-mobile-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -0.8rem right 0, top -1rem right 0;
 }
 
 .floating__title {
@@ -150,13 +172,6 @@ body {
 }
 
 /* FOOTER */
-
-.footer__bg-curve {
-  background-image: url("../images/bg-footer-top-mobile.svg");
-  height: 77px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .footer {
   padding: 5rem 0;
@@ -169,7 +184,7 @@ body {
 }
 
 .newsletter__title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: clamp(1.8rem, 5.5vw, 2.4rem);
 }
@@ -282,7 +297,14 @@ body {
   .header__button {
     padding: 4px 32px;
   }
+
   /* MAIN */
+
+  .hero {
+    padding-bottom: 14rem;
+    background-image: url("../images/bg-section-top-desktop-1.svg");
+  }
+
   .hero__list {
     grid-auto-flow: column;
     justify-content: space-between;
@@ -295,6 +317,12 @@ body {
     gap: 5.5rem;
   }
 
+  .card-no-reverse-curve {
+    background-image: url("../images/bg-section-bottom-desktop-1.svg"),
+      url("../images/bg-section-top-desktop-2.svg");
+    background-position: top -1rem right 0, bottom -1rem right 0;
+  }
+
   .card__no-reverse {
     flex-direction: row;
   }
@@ -302,7 +330,11 @@ body {
   .card__img {
     max-width: 450px;
   }
-  
+
+  .card__img--top {
+    margin-top: 0;
+  }
+
   .card__body {
     max-width: 450px;
     text-align: left;
@@ -312,12 +344,14 @@ body {
     padding: 1.8rem 7.2rem;
   }
 
-  /* FOOTER */
-
-  .footer__bg-curve {
-    background-image: url("../images/bg-footer-top-mobile.svg");
-    height: 170px;
+  .floating {
+    padding: 27rem 0;
+    background-image: url("../images/bg-footer-top-desktop.svg"),
+      url("../images/bg-section-bottom-desktop-2.svg");
+    background-position: bottom -0.5rem right 0, top -0.5rem right 0;
   }
+
+  /* FOOTER */
 
   .footer__flex {
     display: flex;
