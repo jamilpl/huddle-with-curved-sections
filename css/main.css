@@ -90,6 +90,7 @@ body {
 }
 
 .hero__figure {
+  width: 90%;
   max-width: 875px;
   margin: 8rem auto;
 }
@@ -119,7 +120,7 @@ body {
 
 /* CARDS */
 
-.card__img--top {
+.card__img--margin {
   margin-top: 8rem;
 }
 
@@ -144,6 +145,10 @@ body {
 
 .card__body {
   text-align: center;
+}
+
+.card__body--margin {
+  margin-bottom: 8rem;
 }
 
 .card__title {
@@ -331,13 +336,17 @@ body {
     max-width: 450px;
   }
 
-  .card__img--top {
-    margin-top: 0;
+  .card__img--margin {
+    margin: 8rem 0;
   }
 
   .card__body {
     max-width: 450px;
     text-align: left;
+  }
+
+  .card__body--margin {
+    margin: 8rem 0;
   }
 
   .btn {
